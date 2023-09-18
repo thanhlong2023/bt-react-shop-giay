@@ -79,7 +79,9 @@ export default class GioHang extends Component {
                             </button>
                           </td>
                           <td>{giay.price}</td>
-                          <td>{giay.quantity * giay.price}</td>
+                          <td>
+                            {(giay.quantity * giay.price).toLocaleString()}
+                          </td>
                           <td>
                             <button
                               className="btn btn-danger"
